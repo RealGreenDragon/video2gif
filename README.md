@@ -66,4 +66,3 @@ Optional arguments:
 
 # Notes
 - The default parameters for filters are often the best for a GIF
-- To 
