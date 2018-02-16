@@ -1,12 +1,12 @@
 # Video To GIF
 FFmpeg wrapper to easily create GIFs from videos (also with subtitles).
 
-# Requirements
+## Requirements
 - Python 2.7.x or 3.x (all you need are in the Python Standard Library)
 - Install [FFmpeg](https://www.ffmpeg.org/download.html) v3.4 or upper (or copy in the "src" folder a precompiled version)
 - (Optional) Install [Gifsicle](https://www.lcdf.org/gifsicle/) (or copy in the "src" folder a precompiled version) to unlock other functions
 
-# Usage
+## Usage
 ```
 python video2gif.py sourceVideo destinationGif [OPTIONS]
 
@@ -64,5 +64,5 @@ Optional arguments:
                         Burn in the GIF an external subtitle file.
 ```
 
-# Notes
+## Notes
 - The default parameters for filters are often the best for a GIF
