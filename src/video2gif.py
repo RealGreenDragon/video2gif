@@ -926,7 +926,7 @@ def time_string_to_secs(time_string):
         s_split = secs_str.split('.')
         if not s_split or len(s_split) > 2:
             raise argparse.ArgumentTypeError("'%s' is not a valid time" % time_string)
-        elif len(t_split) == 2:
+        elif len(s_split) == 2:
             # 'seconds' and 'microseconds'
             seconds  = int(s_split[0])
             mseconds_str = s_split[1]
@@ -1073,7 +1073,7 @@ def get_args():
     args = vars(parser.parse_args())
     
     # Check if cutting points are valid
-    if args['start'] >= 0 and args['end'] >= 0 and args['start'] == args['end']:
+    if args['start'] >= 0 and args['end'] >= 0 and args['start'] >= args['end']:
         parser.error('Start cutting point is greater or equal than end cutting point')
     
     # Init logger
